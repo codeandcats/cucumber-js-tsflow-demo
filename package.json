@@ -9,7 +9,7 @@
     "build:server": "tsc -p ./src",
     "build": "npm run build:server && npm run build:tests",
     "test": "cucumber-js",
-    "postinstall": "cd \"features/step_definitions\" && typings install"
+    "postinstall": "cd \"features/step_definitions\" && typings install && npm run build"
   },
   "author": "Ben <codeandcats@gmail.com>",
   "license": "MIT",
